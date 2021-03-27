@@ -2,7 +2,7 @@ package lect_1
 
 import scala.io.StdIn
 
-object SelectionSort extends App {
+object E_SelectionSort extends App {
   val count = StdIn.readInt()
 
   val array = StdIn.readLine()

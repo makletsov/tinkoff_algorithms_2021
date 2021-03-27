@@ -2,7 +2,7 @@ package lect_1
 
 import scala.io.StdIn
 
-object Steal extends App {
+object H_Steal extends App {
   StdIn.readInt()
 
   val array = StdIn.readLine()

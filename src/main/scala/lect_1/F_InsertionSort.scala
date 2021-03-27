@@ -2,7 +2,7 @@ package lect_1
 
 import scala.io.StdIn
 
-object BubbleSort extends App {
+object F_InsertionSort extends App {
   def swap(array: Array[Int], left: Int, right: Int): Unit = {
     val temp = array(right)
     array(right) = array(left)
@@ -15,10 +15,13 @@ object BubbleSort extends App {
     .split(" ")
     .map(_.toInt)
 
-  for (i <- array.indices.reverse) {
-    for (j <- 1 to i)
-      if (array(j - 1) > array(j))
-        swap(array, j - 1, j)
+  for (i <- array.indices.tail) {
+    var index = i
+
+    while (index > 0 && array(index - 1) > array(index)) {
+      swap(array, index - 1, index)
+      index -= 1
+    }
   }
 
   println(array.mkString(" "))

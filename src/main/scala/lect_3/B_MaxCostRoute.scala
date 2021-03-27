@@ -1,10 +1,26 @@
 package lect_3
 
+/**
+ * Определите количество последовательностей из нулей и единиц длины n, в которых никакие три единицы не стоят рядом.
+
+ * Входные данные
+ * Вводится натуральное число n, не превосходящее 40.
+
+ * Выходные данные
+ * Выведите количество искомых последовательностей. Гарантируется, что ответ не превосходит 231−1.
+
+ * Пример
+ * входные данныеСкопировать
+ * 3
+ * выходные данныеСкопировать
+ * 7
+ */
+
 import scala.Array.ofDim
 import scala.annotation.tailrec
 import scala.io.StdIn
 
-object MaxCostRoute extends App {
+object B_MaxCostRoute extends App {
   def getInput(height: Int, width: Int): Array[Array[Int]] = {
     val matrix = ofDim[Int](height, width)
 
