@@ -3,7 +3,7 @@ package lect_2
 import scala.annotation.tailrec
 import scala.io.StdIn
 
-object StallsAndCows extends App {
+object H_StallsAndCows extends App {
   val distsCount = StdIn.readLine
     .split(" ")
     .map(_.toInt)
